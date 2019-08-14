@@ -12,23 +12,23 @@ const actions = {
         let supplier_obj=[
             {
               sid:0,
-              supplier_code: "Dakota Rice",
-              fullname: "$36,738",
-              location: "Niger",
-              debit: "Oud-Turnhout",
-              credit: "Oud-Turnhout",
-              balance: "Oud-Turnhout"
+              supplier_code: "abc",
+              full_name: "John Morrison",
+              location: "Niger,Nigeria",
+              debit: "200$",
+              credit: "200$",
+              balance: "200$"
 
 
             },
             {
                 sid:0,
-                supplier_code: "Dakota Rice",
-                fullname: "$36,738",
+                supplier_code: "def Rice",
+                full_name: "Robin Hood",
                 location: "Niger",
-                debit: "Oud-Turnhout",
-                credit: "Oud-Turnhout",
-                balance: "Oud-Turnhout"
+                debit: "200$",
+                credit: "200$",
+                balance: "200$"
             }
           ]
           context.commit("setSuppliers",supplier_obj)
@@ -37,8 +37,8 @@ const actions = {
 };
 
 const mutations = {
-    setSuppliers(state,payload){state.suppliers=payload}
-
+    setSuppliers(state,payload){state.suppliers=payload},
+    newSupplier(state,payload){state.suppliers.push(payload)}
 };
 
 
