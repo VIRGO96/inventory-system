@@ -3,5 +3,11 @@
 </template>
 
 <script>
-export default {};
+import {mapActions} from 'vuex'
+export default {
+  methods:{...mapActions(['fillSuppliers'])},
+  created() {
+    this.fillSuppliers() 
+  }
+};
 </script>
