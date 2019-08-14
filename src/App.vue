@@ -5,9 +5,11 @@
 <script>
 import {mapActions} from 'vuex'
 export default {
-  methods:{...mapActions(['fillSuppliers'])},
+  methods:{...mapActions(['fillSuppliers','fillProducts'])},
   created() {
     this.fillSuppliers() 
+    this.fillProducts() 
+
   }
 };
 </script>
