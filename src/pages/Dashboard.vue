@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <div class="md-layout">
-      <div
+   <!--   <div
         class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33"
       >
         <chart-card
@@ -28,7 +28,7 @@
           </template>
         </chart-card>
       </div>
-      <div
+       <div
         class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33"
       >
         <chart-card
@@ -76,7 +76,7 @@
             </div>
           </template>
         </chart-card>
-      </div>
+      </div> -->
       <div
         class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25"
       >
@@ -86,15 +86,15 @@
           </template>
 
           <template slot="content">
-            <p class="category">Revenue</p>
-            <h3 class="title">$34,245</h3>
+            <p class="category">Total Customers</p>
+            <h3 class="title">5</h3>
           </template>
 
           <template slot="footer">
-            <div class="stats">
+            <!-- <div class="stats">
               <md-icon>date_range</md-icon>
               Last 24 Hours
-            </div>
+            </div> -->
           </template>
         </stats-card>
       </div>
@@ -107,18 +107,18 @@
           </template>
 
           <template slot="content">
-            <p class="category">Used Space</p>
+            <p class="category">Total Suppliers</p>
             <h3 class="title">
-              49/50
-              <small>GB</small>
+              12
+              <!-- <small>GB</small> -->
             </h3>
           </template>
 
           <template slot="footer">
-            <div class="stats">
+            <!-- <div class="stats">
               <md-icon class="text-danger">warning</md-icon>
               <a href="#pablo">Get More Space...</a>
-            </div>
+            </div> -->
           </template>
         </stats-card>
       </div>
@@ -131,42 +131,38 @@
           </template>
 
           <template slot="content">
-            <p class="category">Fixed Issues</p>
+            <p class="category">Products</p>
             <h3 class="title">75</h3>
           </template>
 
           <template slot="footer">
-            <div class="stats">
+            <!-- <div class="stats">
               <md-icon>local_offer</md-icon>
               Tracked from Github
-            </div>
+            </div> -->
           </template>
         </stats-card>
       </div>
-      <div
-        class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25"
-      >
+      <div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
         <stats-card data-background-color="blue">
           <template slot="header">
             <i class="fab fa-twitter"></i>
           </template>
 
           <template slot="content">
-            <p class="category">Folowers</p>
-            <h3 class="title">+245</h3>
+            <p class="category">Revenue</p>
+            <h3 class="title">$30,000</h3>
           </template>
 
           <template slot="footer">
-            <div class="stats">
+            <!-- <div class="stats">
               <md-icon>update</md-icon>
               Just Updated
-            </div>
+            </div> -->
           </template>
         </stats-card>
       </div>
-      <div
-        class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50"
-      >
+       <!--<div  class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50" >
         <md-card>
           <md-card-header data-background-color="orange">
             <h4 class="title">Employees Stats</h4>
@@ -177,9 +173,7 @@
           </md-card-content>
         </md-card>
       </div>
-      <div
-        class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50"
-      >
+      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50" >
         <nav-tabs-card>
           <template slot="content">
             <span class="md-nav-tabs-title">Tasks:</span>
@@ -198,7 +192,7 @@
             </md-tabs>
           </template>
         </nav-tabs-card>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
