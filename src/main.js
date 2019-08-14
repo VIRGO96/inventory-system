@@ -23,6 +23,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 // router setup
 import routes from "./routes/routes";
+import store from '@/store/index'
 
 // Plugins
 import GlobalComponents from "./globalComponents";
@@ -53,6 +54,7 @@ new Vue({
   el: "#app",
   render: h => h(App),
   router,
+  store,
   data: {
     Chartist: Chartist
   }
