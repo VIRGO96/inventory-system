@@ -8,6 +8,7 @@ import Icons from "@/pages/Icons.vue";
 import Maps from "@/pages/Maps.vue";
 import Notifications from "@/pages/Notifications.vue";
 import UpgradeToPRO from "@/pages/UpgradeToPRO.vue";
+import Suppliers from "@/pages/Suppliers.vue";
 
 const routes = [
   {
@@ -29,6 +30,11 @@ const routes = [
         path: "table",
         name: "Table List",
         component: TableList
+      },
+      {
+        path: "suppliers",
+        name: "Suppliers",
+        component: Suppliers
       },
       {
         path: "typography",
