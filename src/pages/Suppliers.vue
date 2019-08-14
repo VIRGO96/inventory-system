@@ -185,7 +185,6 @@ export default {
         debit:item.debit,
         location:item.location,
         balance:item.balance,
-
       }
       this.$bvModal.show('update-supplier-modal')
 
