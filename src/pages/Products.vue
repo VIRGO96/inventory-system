@@ -20,7 +20,7 @@
     </div>
     <b-modal id="create-product-modal">
       <template slot="modal-header" slot-scope="{ close }">
-        <h5>Create Supplier</h5>
+        <h5>Create Product</h5>
       </template>
 
       <template slot="default" slot-scope="{ hide }">
@@ -29,31 +29,31 @@
                   <h5 style="color:black;">Product Name</h5>
                 </div>
                 <div class="col-md-6">
-                  <b-form-input v-model="product_obj.full_name" placeholder="Alex Hesh"></b-form-input>
+                  <b-form-input v-model="product_obj.product_name" placeholder="Uranium Salt"></b-form-input>
                 </div>
                 <div  class="col-md-6">
                   <h5 style="color:black;">Date</h5>
                 </div>
                 <div class="col-md-6">
-                  <b-form-input v-model="product_obj.location" placeholder="Saint Preux"></b-form-input>
+                  <b-form-input v-model="product_obj.date" type="date" placeholder="2018-10-10"></b-form-input>
                 </div>
                 <div  class="col-md-6">
                   <h5 style="color:black;">Quantity</h5>
                 </div>
                 <div class="col-md-6">
-                  <b-form-input v-model="product_obj.debit"  placeholder="$300"></b-form-input>
+                  <b-form-input v-model="product_obj.quantity"  placeholder="$300"></b-form-input>
                 </div>
                 <div  class="col-md-6">
                   <h5 style="color:black;">Cost Price</h5>
                 </div>
                 <div class="col-md-6">
-                  <b-form-input v-model="product_obj.credit" placeholder="$300"></b-form-input>
+                  <b-form-input v-model="product_obj.cost_price" placeholder="$300"></b-form-input>
                 </div>
                 <div  class="col-md-6">
                   <h5 style="color:black;">Selling Price</h5>
                 </div>
                 <div class="col-md-6">
-                  <b-form-input v-model="product_obj.balance" placeholder="$300"></b-form-input>
+                  <b-form-input v-model="product_obj.selling_price" placeholder="$300"></b-form-input>
                 </div>
           </div>
       </template>
@@ -80,31 +80,31 @@
                   <h5 style="color:black;">Product Name</h5>
                 </div>
                 <div class="col-md-6">
-                  <b-form-input v-model="product_obj.full_name" placeholder="Alex Hesh"></b-form-input>
+                  <b-form-input v-model="product_obj.product_name" placeholder="Uranium Salt"></b-form-input>
                 </div>
                 <div  class="col-md-6">
                   <h5 style="color:black;">Date</h5>
                 </div>
                 <div class="col-md-6">
-                  <b-form-input v-model="product_obj.location" placeholder="Saint Preux"></b-form-input>
+                  <b-form-input v-model="product_obj.date" type="date" placeholder="2018-10-10"></b-form-input>
                 </div>
                 <div  class="col-md-6">
                   <h5 style="color:black;">Quantity</h5>
                 </div>
                 <div class="col-md-6">
-                  <b-form-input v-model="product_obj.debit"  placeholder="$300"></b-form-input>
+                  <b-form-input v-model="product_obj.quantity"  placeholder="$300"></b-form-input>
                 </div>
                 <div  class="col-md-6">
-                  <h5 style="color:black;">Cos Price</h5>
+                  <h5 style="color:black;">Cost Price</h5>
                 </div>
                 <div class="col-md-6">
-                  <b-form-input v-model="product_obj.credit" placeholder="$300"></b-form-input>
+                  <b-form-input v-model="product_obj.cost_price" placeholder="$300"></b-form-input>
                 </div>
                 <div  class="col-md-6">
                   <h5 style="color:black;">Selling Price</h5>
                 </div>
                 <div class="col-md-6">
-                  <b-form-input v-model="product_obj.balance" placeholder="$300"></b-form-input>
+                  <b-form-input v-model="product_obj.selling_price" placeholder="$300"></b-form-input>
                 </div>
                 
           </div>
@@ -140,11 +140,11 @@ export default {
   data() {
     return{
       product_obj:{
-        full_name:null,
-        credit:null,
-        debit:null,
-        location:null,
-        balance:null,
+        product_name:null,
+        date:'2017-07-04',
+        quantity:null,
+        cost_price:null,
+        selling_price:null,
 
       },
       fields: [
@@ -160,30 +160,32 @@ export default {
   methods:{
 
     callFillProducts(){
-      this.$bvModal.hide('create-product-modal')
+      console.log("dsadasd")
+      // this.$bvModal.hide('create-product-modal')
       //api code here
-      this.$store.commit("newSupplier",this.product_obj)
-      this.emptySupplierObj()
+      console.log(this.product_obj)
+      // this.$store.commit("newSupplier",this.product_obj)
+      // this.emptySupplierObj()
       
     },
     emptySupplierObj(){
       this.product_obj={
-        full_name:null,
-        credit:null,
-        debit:null,
-        location:null,
-        balance:null,
+        product_name:null,
+        date:null,
+        quantity:null,
+        cost_price:null,
+        selling_price:null,
 
       }
 
     },
     showModal(item){
       this.product_obj={
-        full_name:item.full_name,
-        credit:item.credit,
-        debit:item.debit,
-        location:item.location,
-        balance:item.balance,
+        product_name:item.product_name,
+        date:item.date,
+        quantity:item.quantity,
+        cost_price:item.cost_price,
+        selling_price:item.selling_price,
       }
       this.$bvModal.show('update-product-modal')
 
