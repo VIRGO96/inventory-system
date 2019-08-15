@@ -76,10 +76,10 @@
               </a>
             </li> -->
 
-            <!-- <md-list-item href="#/user">
-              <i class="material-icons">person</i>
+            <md-list-item href="#/">
+              <i class="material-icons">logout</i>
               <p class="hidden-lg hidden-md">Profile</p>
-            </md-list-item> -->
+            </md-list-item>
           </md-list>
         </div>
       </div>
