@@ -27,13 +27,13 @@
               :per-page="perPage"
               :filter="filter">
               <template slot="actions" slot-scope="row">
-                <button  class="btn btn-success btn-sm" @click="emitItem(row.item)" >View Profile</button>
+                <button  class="btn btn-success btn-sm" @click="emitItem(row.item)" >View</button>
               </template> 
               </b-table>
           <b-row>
             <b-col md="6" class="my-1">
               <b-pagination
-                v-model="currentPage"
+                  v-model="currentPage"
                 :total-rows="totalRows"
                 :per-page="perPage"
                 class="my-0"
@@ -112,13 +112,3 @@
     }
   }
 </script>
-<style scoped>
-
-/* .col-md-6{
-  margin-top:10px;
-} */
-/* .modal-open {
-  overflow-y:scroll!important;
-  padding-right:0 !important;
-  } */
-</style>
