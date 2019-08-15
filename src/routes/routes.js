@@ -10,6 +10,7 @@ import Notifications from "@/pages/Notifications.vue";
 import UpgradeToPRO from "@/pages/UpgradeToPRO.vue";
 import Suppliers from "@/pages/Suppliers.vue";
 import Products from "@/pages/Products.vue";
+import Customers from "@/pages/Customers.vue";
 
 const routes = [
   {
@@ -41,6 +42,11 @@ const routes = [
         path: "products",
         name: "Products",
         component: Products
+      },
+      {
+        path: "customers",
+        name: "Customers",
+        component: Customers
       },
       {
         path: "typography",
