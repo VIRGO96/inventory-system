@@ -27,13 +27,13 @@
           <li><a href="#">Another One</a></li>
         </ul>
       </drop-down>
-    </li>
+    </li>-->
     <li>
-      <a href="#" data-toggle="dropdown" class="dropdown-toggle"
-        ><i class="material-icons">person</i>
-        <p>Profile</p></a
+      <a href="/"  
+        ><i class="material-icons">logout</i>
+        </a
       >
-    </li> -->
+    </li> 
   </ul>
 </template>
 <script>
