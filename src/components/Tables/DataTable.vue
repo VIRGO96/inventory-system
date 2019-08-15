@@ -92,7 +92,6 @@
     methods : {
      
       emitItem(item){
-        console.log(item)
         this.$emit("item-event", item);
       },
       onFiltered(filteredItems) {
