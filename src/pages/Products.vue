@@ -160,12 +160,10 @@ export default {
   methods:{
 
     callFillProducts(){
-      console.log("dsadasd")
-      // this.$bvModal.hide('create-product-modal')
+      this.$bvModal.hide('create-product-modal')
       //api code here
-      console.log(this.product_obj)
       // this.$store.commit("newSupplier",this.product_obj)
-      // this.emptySupplierObj()
+      this.emptySupplierObj()
       
     },
     emptySupplierObj(){
