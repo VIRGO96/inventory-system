@@ -82,12 +82,12 @@
       >
         <stats-card data-background-color="green">
           <template slot="header">
-            <md-icon>store</md-icon>
+            <md-icon>group</md-icon>
           </template>
 
           <template slot="content">
             <p class="category">Total Customers</p>
-            <h3 class="title">5</h3>
+            <h3 class="title">{{customers.length}}</h3>
           </template>
 
           <template slot="footer">
@@ -103,13 +103,13 @@
       >
         <stats-card data-background-color="orange">
           <template slot="header">
-            <md-icon>content_copy</md-icon>
+            <md-icon>wc</md-icon>
           </template>
 
           <template slot="content">
             <p class="category">Total Suppliers</p>
             <h3 class="title">
-              12
+              {{suppliers.length}}
               <!-- <small>GB</small> -->
             </h3>
           </template>
@@ -127,12 +127,12 @@
       >
         <stats-card data-background-color="red">
           <template slot="header">
-            <md-icon>info_outline</md-icon>
+            <md-icon>local_grocery_store</md-icon>
           </template>
 
           <template slot="content">
             <p class="category">Products</p>
-            <h3 class="title">75</h3>
+            <h3 class="title">{{products.length}}</h3>
           </template>
 
           <template slot="footer">
@@ -146,12 +146,12 @@
       <div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
         <stats-card data-background-color="blue">
           <template slot="header">
-            <i class="fab fa-twitter"></i>
+            <i class="fas fa-dollar-sign"></i>
           </template>
 
           <template slot="content">
             <p class="category">Revenue</p>
-            <h3 class="title">$30,000</h3>
+            <h3 class="title">30,000</h3>
           </template>
 
           <template slot="footer">
@@ -198,6 +198,7 @@
 </template>
 
 <script>
+import {mapGetters} from 'vuex'
 import {
   StatsCard,
   ChartCard,
@@ -213,6 +214,10 @@ export default {
     NavTabsCard,
     NavTabsTable,
     OrderedTable
+  },
+  computed :{
+    ...mapGetters(['customers','suppliers','products'])
+
   },
   data() {
     return {
