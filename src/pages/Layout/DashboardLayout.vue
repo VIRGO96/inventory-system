@@ -8,15 +8,27 @@
         <md-icon>dashboard</md-icon>
         <p>Dashboard</p>
       </sidebar-link>
-      <sidebar-link to="/user">
+      <!-- <sidebar-link to="/user">
         <md-icon>person</md-icon>
         <p>User Profile</p>
-      </sidebar-link>
-      <sidebar-link to="/table">
+      </sidebar-link> -->
+       <!-- <sidebar-link to="/table">
         <md-icon>content_paste</md-icon>
         <p>Table list</p>
+      </sidebar-link> -->
+       <sidebar-link to="/suppliers">
+        <md-icon>group</md-icon>
+        <p>Suppliers</p>
       </sidebar-link>
-      <sidebar-link to="/typography">
+       <sidebar-link to="/customers">
+        <md-icon>wc</md-icon>
+        <p>Customers</p>
+      </sidebar-link>
+      <sidebar-link to="/products">
+        <md-icon>local_grocery_store</md-icon>
+        <p>Products</p>
+      </sidebar-link>
+      <!-- <sidebar-link to="/typography">
         <md-icon>library_books</md-icon>
         <p>Typography</p>
       </sidebar-link>
@@ -31,11 +43,8 @@
       <sidebar-link to="/notifications">
         <md-icon>notifications</md-icon>
         <p>Notifications</p>
-      </sidebar-link>
-      <sidebar-link to="/upgrade" class="active-pro">
-        <md-icon>unarchive</md-icon>
-        <p>Upgrade to PRO</p>
-      </sidebar-link>
+      </sidebar-link> -->
+      
     </side-bar>
 
     <div class="main-panel">
@@ -43,7 +52,7 @@
 
       <dashboard-content> </dashboard-content>
 
-      <content-footer v-if="!$route.meta.hideFooter"></content-footer>
+      <!-- <content-footer v-if="!$route.meta.hideFooter"></content-footer> -->
     </div>
   </div>
 </template>
