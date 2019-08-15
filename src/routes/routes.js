@@ -11,8 +11,14 @@ import UpgradeToPRO from "@/pages/UpgradeToPRO.vue";
 import Suppliers from "@/pages/Suppliers.vue";
 import Products from "@/pages/Products.vue";
 import Customers from "@/pages/Customers.vue";
+import Login from "@/pages/Login.vue";
 
 const routes = [
+  {
+    path: "/login",
+    name: "login",
+    component: Login
+  },
   {
     path: "/",
     component: DashboardLayout,
