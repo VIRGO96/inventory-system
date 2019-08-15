@@ -15,73 +15,73 @@ import Login from "@/pages/Login.vue";
 
 const routes = [
   {
-    path: "/login",
+    path: "/",
     name: "login",
     component: Login
   },
   {
-    path: "/",
+    path: "/dashboard",
     component: DashboardLayout,
     redirect: "/dashboard",
     children: [
       {
-        path: "dashboard",
+        path: "/dashboard",
         name: "Dashboard",
         component: Dashboard
       },
+      // {
+      //   path: "/user",
+      //   name: "User Profile",
+      //   component: UserProfile
+      // },
       {
-        path: "user",
-        name: "User Profile",
-        component: UserProfile
-      },
-      {
-        path: "table",
+        path: "/table",
         name: "Table List",
         component: TableList
       },
       {
-        path: "suppliers",
+        path: "/suppliers",
         name: "Suppliers",
         component: Suppliers
       },
       {
-        path: "products",
+        path: "/products",
         name: "Products",
         component: Products
       },
       {
-        path: "customers",
+        path: "/customers",
         name: "Customers",
         component: Customers
       },
-      {
-        path: "typography",
-        name: "Typography",
-        component: Typography
-      },
-      {
-        path: "icons",
-        name: "Icons",
-        component: Icons
-      },
-      {
-        path: "maps",
-        name: "Maps",
-        meta: {
-          hideFooter: true
-        },
-        component: Maps
-      },
-      {
-        path: "notifications",
-        name: "Notifications",
-        component: Notifications
-      },
-      {
-        path: "upgrade",
-        name: "Upgrade to PRO",
-        component: UpgradeToPRO
-      }
+      // {
+      //   path: "typography",
+      //   name: "Typography",
+      //   component: Typography
+      // },
+      // {
+      //   path: "icons",
+      //   name: "Icons",
+      //   component: Icons
+      // },
+      // {
+      //   path: "maps",
+      //   name: "Maps",
+      //   meta: {
+      //     hideFooter: true
+      //   },
+      //   component: Maps
+      // },
+      // {
+      //   path: "notifications",
+      //   name: "Notifications",
+      //   component: Notifications
+      // },
+      // {
+      //   path: "upgrade",
+      //   name: "Upgrade to PRO",
+      //   component: UpgradeToPRO
+      // }
     ]
   }
 ];
