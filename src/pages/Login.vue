@@ -10,18 +10,18 @@
 					<div class="wrap-input100 validate-input" >
                         
 						<input class="input100" type="text" name="username" placeholder="User name">
-                        <span class="focus-input100" style="top:46px;left:45px;">
-                            <i class="fas fa-user"></i>
+                        <span class="focus-input100" style="top:44px;left:35px;">
+                            <i class="fas fa-user" style="font-size:24px"></i>
                         </span> 
 					</div>
 
 					<div class="wrap-input100 validate-input" >
 						<input class="input100" type="password" name="pass" placeholder="Password">
-                        <span class="focus-input100" style="top:46px;left:45px;">
-                            <i class="fas fa-unlock-alt"></i></span> 
+                        <span class="focus-input100" style="top:44px;left:35px;">
+                            <i class="fas fa-unlock-alt" style="font-size:24px"></i></span> 
 					</div>
 					<div class="container-login100-form-btn m-t-32">
-						<button class="login100-form-btn">
+						<button style="background-color:#555555;" @click="redirectDashboard" class="login100-form-btn">
 							Login
 						</button>
 					</div>
@@ -31,3 +31,12 @@
 		</div>
 	</div>
 </template>
+<script>
+export default {
+	methods:{
+		redirectDashboard(){
+			this.$router.push({path:'/dashboard'})
+		}
+	}
+}
+</script>
