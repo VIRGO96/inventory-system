@@ -29,7 +29,7 @@
 
 body, html {
 	height: 100%;
-	font-family: Ubuntu-Regular, sans-serif;
+	/* font-family: Ubuntu-Regular, sans-serif; */
 }
 
 /*---------------------------------------------*/
@@ -216,7 +216,7 @@ iframe {
 }
 
 .login100-form-title {
-  font-family: Ubuntu-Bold;
+  /* font-family: Ubuntu-Bold; */
   font-size: 28px;
   color: #fff;
   line-height: 1.2;
@@ -238,7 +238,7 @@ iframe {
 }
 
 .input100 {
-  font-family: Ubuntu-Regular;
+  /* font-family: Ubuntu-Regular; */
   font-size: 20px;
   color: #555555;
   line-height: 1.2;
@@ -346,7 +346,7 @@ iframe {
 }
 
 .login100-form-btn {
-  font-family: Ubuntu-Bold;
+  /* font-family: Ubuntu-Bold; */
   font-size: 18px;
   color: #fff;
   line-height: 1.2;
