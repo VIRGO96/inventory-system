@@ -8,7 +8,7 @@
     <div class="logo">
       <a href="#" class="simple-text logo-mini">
         <div class="logo-img">
-          <img :src="imgLogo" alt="" />
+          <img :src="imgLogo" alt="" style="width: 60px;height: 22px;"/>
         </div>
       </a>
 
@@ -54,7 +54,7 @@ export default {
     },
     imgLogo: {
       type: String,
-      default: require("@/assets/img/vue-logo.png")
+      default: require("@/assets/img/vue-logo.jpeg")
     },
     activeColor: {
       type: String,
