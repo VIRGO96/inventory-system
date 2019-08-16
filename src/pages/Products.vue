@@ -26,7 +26,7 @@
     </div>
     <b-modal id="create-product-modal">
       <template slot="modal-header" slot-scope="{ close }">
-        <h5>Create Product</h5>
+        <h5><b><strong>Create Product</strong></b> </h5>
       </template>
 
       <template slot="default" slot-scope="{ hide }">
@@ -77,7 +77,7 @@
 
     <b-modal id="update-product-modal">
       <template slot="modal-header" slot-scope="{ close }">
-        <h5>Modify Product</h5>
+        <h5><b><strong>Modify Product</strong></b></h5>
       </template>
 
       <template slot="default" slot-scope="{ hide }">

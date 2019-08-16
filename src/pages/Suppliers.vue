@@ -24,7 +24,7 @@
     </div>
     <b-modal id="create-supplier-modal">
       <template slot="modal-header" slot-scope="{ close }">
-        <h5>Create Supplier</h5>
+        <h5><b><strong>Create Supplier</strong></b> </h5>
       </template>
 
       <template slot="default" slot-scope="{ hide }">
@@ -76,7 +76,7 @@
 
     <b-modal id="update-supplier-modal">
       <template slot="modal-header" slot-scope="{ close }">
-        <h5>Modify Supplier</h5>
+        <h5><b><strong>Modify Supplier</strong></b> </h5>
       </template>
 
       <template slot="default" slot-scope="{ hide }">
