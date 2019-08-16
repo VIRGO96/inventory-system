@@ -7,7 +7,11 @@
         <md-card>
           <md-card-header data-background-color="green">
              <div class="md-button-content ">
-              <i data-v-393bd7a0=""  @click="createSupplier()" class="md-icon md-icon-font md-theme-demo-light pull-right"> add</i>
+               <button  class="btn btn-info btn-sm pull-right" @click="createSupplier()">
+                  <i class="md-icon md-icon-font md-theme-demo-light "> add</i>
+                  Create Suppliers
+                </button>
+              <!-- <i data-v-393bd7a0=""  @click="createSupplier()" class="md-icon md-icon-font md-theme-demo-light pull-right"> add</i> -->
               </div> 
             <h4 class="title">Suppliers</h4>
             <p class="category">Manage your Business Suppliers</p>

@@ -7,7 +7,13 @@
         <md-card>
           <md-card-header data-background-color="green">
              <div class="md-button-content ">
-              <i data-v-393bd7a0=""  @click="createProduct()" class="md-icon md-icon-font md-theme-demo-light pull-right"> add</i>
+                <button  class="btn btn-info btn-sm pull-right" @click="createProduct()">
+                  <i class="md-icon md-icon-font md-theme-demo-light "> add</i>
+                  Create Products
+                </button>
+               <!-- <span class="pull-right">
+                  <i   @click="createProduct()" class="md-icon md-icon-font md-theme-demo-light "> add</i>Create Product
+               </span> -->
               </div> 
             <h4 class="title">Products</h4>
             <p class="category">Manage your Business Products</p>
