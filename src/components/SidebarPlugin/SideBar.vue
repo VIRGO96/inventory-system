@@ -54,7 +54,7 @@ export default {
     },
     imgLogo: {
       type: String,
-      default: require("@/assets/img/vue-logo.jpeg")
+      default: require("@/assets/img/vue-logo.png")
     },
     activeColor: {
       type: String,

@@ -8,7 +8,7 @@
 				<form class="login100-form validate-form p-b-33 p-t-5">
 					<div class="row">
 						<div class="offset-md-3 col-md-6">
-          <img src="../assets/img/vue-logo.jpeg" alt="" style="width: 160px;height: 100px;"/>
+          <img src="../assets/img/vue-logo.png" alt="" style="width: 160px;height: 100px;"/>
 
 						</div>
 					</div>
