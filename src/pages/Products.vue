@@ -115,6 +115,13 @@
                 <div class="col-md-6">
                   <b-form-select v-model="product_obj.status" :options="options"></b-form-select>
                 </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Type</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-select v-model="product_obj.type" :options="type_options"></b-form-select>
+                </div>
+                
           </div>
       </template>
 
@@ -220,6 +227,12 @@
                 <div class="col-md-6">
                   <b-form-select v-model="product_obj.status" :options="options"></b-form-select>
                 </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Type</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-select v-model="product_obj.type" :options="type_options"></b-form-select>
+                </div>
                 
           </div>
       </template>
@@ -258,6 +271,7 @@ export default {
         product_name:null,
         date:'2017-07-04',
         quantity:null,
+        type:'type_a',
         cost_price:null,
         selling_price:null,
         status:'disabled',
@@ -274,6 +288,10 @@ export default {
       options:[
         {value:'active',text:'active'},
         {value:'disabled',text:'disabled'}
+      ],
+      type_options:[
+        {value:'type_a',text:'Type A'},
+        {value:'type_b',text:'Type B'}
       ],
       fields: [
           { key: 'product_code', label: 'Product Code' },
@@ -313,7 +331,9 @@ export default {
         sold:null,
         onhand:null,
         comitted:null,
-        available:null
+        available:null,
+        type:null,
+
 
       }
 
@@ -332,7 +352,9 @@ export default {
         sold:item.sold,
         onhand:item.onhand,
         comitted:item.comitted,
-        available:item.available
+        available:item.available,
+        type:item.type,
+
       }
       this.$bvModal.show('update-product-modal')
 

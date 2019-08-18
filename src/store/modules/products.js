@@ -26,7 +26,8 @@ const actions = {
               incoming:100,
               inbound:0,
               outbound:0,
-              status:'active'
+              status:'active',
+              type:'type_a'
 
             },
             {
@@ -46,7 +47,8 @@ const actions = {
                 incoming:100,
                 inbound:0,
                 outbound:0,
-                status:'active'
+                status:'active',
+                type:'type_a'
 
             },
             {
@@ -66,7 +68,8 @@ const actions = {
                 incoming:100,
                 inbound:0,
                 outbound:0,
-                status:'active'
+                status:'active',
+                type:'type_a'
 
             },
             {
@@ -86,7 +89,8 @@ const actions = {
                 incoming:100,
                 inbound:0,
                 outbound:0,
-                status:'active'
+                status:'active',
+                type:'type_a'
 
             },
             {
@@ -106,7 +110,8 @@ const actions = {
                 incoming:100,
                 inbound:0,
                 outbound:0,
-                status:'active'
+                status:'active',
+                type:'type_a'
 
             },
             {
@@ -126,7 +131,8 @@ const actions = {
                 incoming:100,
                 inbound:0,
                 outbound:0,
-                status:'active'
+                status:'active',
+                type:'type_a'
 
             }
           ]
