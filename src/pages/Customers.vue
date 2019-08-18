@@ -30,10 +30,34 @@
       <template slot="default" slot-scope="{ hide }">
         <div class="row">
                 <div  class="col-md-6">
-                  <h5 style="color:black;">Full Name</h5>
+                  <h5 style="color:black;">Customer Image</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-file ></b-form-file>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Customer Name</h5>
                 </div>
                 <div class="col-md-6">
                   <b-form-input v-model="supplier_obj.full_name" placeholder="Alex Hesh"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Username</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="supplier_obj.username" placeholder="demouser"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Password</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input type="password" v-model="supplier_obj.password" placeholder="******"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Postition</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-select v-model="supplier_obj.position" :options="position_options"></b-form-select>
                 </div>
                 <div  class="col-md-6">
                   <h5 style="color:black;">Location</h5>
@@ -82,11 +106,36 @@
       <template slot="default" slot-scope="{ hide }">
         <div class="row">
                 <div  class="col-md-6">
+                  <h5 style="color:black;">Customer Image</h5>
+                </div>
+                <div  class="col-md-6">
+                  <button  class="btn btn-success btn-sm" @click="previewfile" >View Image</button>
+                </div>
+                <div  class="col-md-6">
                   <h5 style="color:black;">Full Name</h5>
                 </div>
                 <div class="col-md-6">
                   <b-form-input v-model="supplier_obj.full_name" placeholder="Alex Hesh"></b-form-input>
                 </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Username</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="supplier_obj.username" placeholder="demouser"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Password</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input type="password" v-model="supplier_obj.password" placeholder="******"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Postition</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-select v-model="supplier_obj.position" :options="position_options"></b-form-select>
+                </div>
+                
                 <div  class="col-md-6">
                   <h5 style="color:black;">Location</h5>
                 </div>
@@ -144,13 +193,27 @@ export default {
   },
   data() {
     return{
+      position_options:[
+        {value:'purchasing',text:'Purchasing'},
+        {value:'inbounder',text:'Inbounder'},
+        {value:'receiver',text:'Receiver'},
+        {value:'quality_checker',text:'Quality Checker'},
+        {value:'picker',text:'Picker'},
+        {value:'keeper',text:'Keeper'},
+        {value:'admin',text:'Admin'}
+
+
+      ],
       supplier_obj:{
         full_name:null,
         credit:null,
         debit:null,
         location:null,
         balance:null,
-
+        username:null,
+        password:null,
+        position:null,
+        customer_image:'https://picsum.photos/id/20/1024/480'
       },
       fields: [
           { key: 'full_name', label: 'Full Name' },
@@ -178,6 +241,9 @@ export default {
         debit:null,
         location:null,
         balance:null,
+        username:null,
+        password:null,
+        position:null
 
       }
 
@@ -189,8 +255,17 @@ export default {
         debit:item.debit,
         location:item.location,
         balance:item.balance,
+        username:item.username,
+        password:item.password,
+        position:item.position
       }
       this.$bvModal.show('update-supplier-modal')
+
+    },
+    previewfile()
+    {
+      var params = "menubar=no,titlebar=no,status=no,toolbar=no,location=no,resizable=no,scrollbars=no,height=300,width=600,left=600,top=300"
+      var newwindow = window.open("https://firebasestorage.googleapis.com/v0/b/sparc-bd7b1.appspot.com/o/profile_images%2Fimage.jpg?alt=media&token=e610a4b9-c2a7-4732-84ec-fd1677a8b333", 'image', params);
 
     },
     createCustomer(){

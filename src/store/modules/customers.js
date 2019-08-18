@@ -18,7 +18,11 @@ const actions = {
               location: "Niger,Nigeria",
               debit: "200$",
               credit: "200$",
-              balance: "200$"
+              balance: "200$",
+              username:'john',
+              password:'john',
+              position:'purchasing'
+              
 
 
             },
@@ -30,7 +34,10 @@ const actions = {
                 location: "Niger",
                 debit: "200$",
                 credit: "200$",
-                balance: "200$"
+                balance: "200$",
+                username:'john',
+                password:'john',
+                position:'purchasing'
             },
             {
                 cid:0,
@@ -40,7 +47,10 @@ const actions = {
                 location: "Niger",
                 debit: "200$",
                 credit: "200$",
-                balance: "200$"
+                balance: "200$",
+                username:'john',
+                password:'john',
+                position:'purchasing'
             },
             {
                 cid:0,
@@ -50,7 +60,10 @@ const actions = {
                 location: "Niger",
                 debit: "200$",
                 credit: "200$",
-                balance: "200$"
+                balance: "200$",
+                username:'john',
+                password:'john',
+                position:'purchasing'
             }
           ]
           context.commit("setCustomers",customer_obj)
