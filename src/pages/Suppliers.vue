@@ -36,6 +36,18 @@
                   <b-form-input v-model="supplier_obj.full_name" placeholder="Alex Hesh"></b-form-input>
                 </div>
                 <div  class="col-md-6">
+                  <h5 style="color:black;">Email</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="supplier_obj.email" placeholder="someone@gmail.com"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Phone</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="supplier_obj.phone_no" placeholder="+4456858586589"></b-form-input>
+                </div>
+                <div  class="col-md-6">
                   <h5 style="color:black;">Location</h5>
                 </div>
                 <div class="col-md-6">
@@ -86,6 +98,18 @@
                 </div>
                 <div class="col-md-6">
                   <b-form-input v-model="supplier_obj.full_name" placeholder="Alex Hesh"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Email</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="supplier_obj.email" placeholder="someone@gmail.com"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Phone</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="supplier_obj.phone_no" placeholder="+4456858586589"></b-form-input>
                 </div>
                 <div  class="col-md-6">
                   <h5 style="color:black;">Location</h5>
@@ -150,6 +174,8 @@ export default {
         debit:null,
         location:null,
         balance:null,
+        email:null,
+        phone_no:null
 
       },
       fields: [
@@ -178,6 +204,8 @@ export default {
         debit:null,
         location:null,
         balance:null,
+        email:null,
+        phone_no:null
 
       }
 
@@ -189,6 +217,8 @@ export default {
         debit:item.debit,
         location:item.location,
         balance:item.balance,
+        email:item.email,
+        phone_no:item.phone_no
       }
       this.$bvModal.show('update-supplier-modal')
 
