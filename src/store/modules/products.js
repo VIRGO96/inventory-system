@@ -18,7 +18,15 @@ const actions = {
               quantity: "62 Pcs",
               cost_price: "200$",
               selling_price: "200$",
-              brand: "200$"
+              brand: "Ramada",
+              onhand:100,
+              available:150,
+              comitted:100,
+              sold:100,
+              incoming:100,
+              inbound:0,
+              outbound:0,
+              status:'active'
 
             },
             {
@@ -30,7 +38,15 @@ const actions = {
                 quantity: "92 Pcs",
                 cost_price: "200$",
                 selling_price: "200$",
-                brand: "United Fertilizers"
+                brand: "United Fertilizers",
+                onhand:100,
+                available:150,
+                comitted:100,
+                sold:100,
+                incoming:100,
+                inbound:0,
+                outbound:0,
+                status:'active'
 
             },
             {
@@ -42,7 +58,15 @@ const actions = {
                 quantity: "92 Pcs",
                 cost_price: "200$",
                 selling_price: "200$",
-                brand: "United Fertilizers"
+                brand: "United Fertilizers",
+                onhand:100,
+                available:150,
+                comitted:100,
+                sold:100,
+                incoming:100,
+                inbound:0,
+                outbound:0,
+                status:'active'
 
             },
             {
@@ -54,7 +78,15 @@ const actions = {
                 quantity: "92 Pcs",
                 cost_price: "200$",
                 selling_price: "200$",
-                brand: "United Fertilizers"
+                brand: "United Fertilizers",
+                onhand:100,
+                available:150,
+                comitted:100,
+                sold:100,
+                incoming:100,
+                inbound:0,
+                outbound:0,
+                status:'active'
 
             },
             {
@@ -66,7 +98,15 @@ const actions = {
                 quantity: "92 Pcs",
                 cost_price: "200$",
                 selling_price: "200$",
-                brand: "United Fertilizers"
+                brand: "United Fertilizers",
+                onhand:100,
+                available:150,
+                comitted:100,
+                sold:100,
+                incoming:100,
+                inbound:0,
+                outbound:0,
+                status:'active'
 
             },
             {
@@ -78,7 +118,15 @@ const actions = {
                 quantity: "92 Pcs",
                 cost_price: "200$",
                 selling_price: "200$",
-                brand: "United Fertilizers"
+                brand: "United Fertilizers",
+                onhand:100,
+                available:150,
+                comitted:100,
+                sold:100,
+                incoming:100,
+                inbound:0,
+                outbound:0,
+                status:'active'
 
             }
           ]
