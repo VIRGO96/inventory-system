@@ -137,6 +137,12 @@
       <template slot="default" slot-scope="{ hide }">
         <div class="row">
                 <div  class="col-md-6">
+                  <h5 style="color:black;">Product Image</h5>
+                </div>
+                <div  class="col-md-6">
+                  <button  class="btn btn-success btn-sm" @click="previewfile" >View Image</button>
+                </div>
+                <div  class="col-md-6">
                   <h5 style="color:black;">Product Name</h5>
                 </div>
                 <div class="col-md-6">
@@ -248,6 +254,7 @@ export default {
   data() {
     return{
       product_obj:{
+        product_file:'https://picsum.photos/id/20/1024/480',
         product_name:null,
         date:'2017-07-04',
         quantity:null,
@@ -279,7 +286,12 @@ export default {
     }
   },
   methods:{
+    previewfile()
+    {
+      var params = "menubar=no,titlebar=no,status=no,toolbar=no,location=no,resizable=no,scrollbars=no,height=300,width=600,left=600,top=300"
+      var newwindow = window.open("https://picsum.photos/id/20/1024/480", 'image', params);
 
+    },
     callFillProducts(){
       this.$bvModal.hide('create-product-modal')
       //api code here
