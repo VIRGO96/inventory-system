@@ -32,6 +32,12 @@
       <template slot="default" slot-scope="{ hide }">
         <div class="row">
                 <div  class="col-md-6">
+                  <h5 style="color:black;">Product Image</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-file ></b-form-file>
+                </div>
+                <div  class="col-md-6">
                   <h5 style="color:black;">Product Name</h5>
                 </div>
                 <div class="col-md-6">
@@ -60,6 +66,54 @@
                 </div>
                 <div class="col-md-6">
                   <b-form-input v-model="product_obj.selling_price" placeholder="$300"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">On Hand</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="product_obj.onhand" placeholder="100"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Available</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="product_obj.available" placeholder="200"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Committed</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="product_obj.comitted" placeholder="100"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Sold</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="product_obj.sold" placeholder="120"></b-form-input>
+                </div>
+                 <div  class="col-md-6">
+                  <h5 style="color:black;">Incoming</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="product_obj.incoming" placeholder="50"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Inbound</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="product_obj.inbound" placeholder="500"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Outbound</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="product_obj.outbound" placeholder="100"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Status</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-select v-model="product_obj.status" :options="options"></b-form-select>
                 </div>
           </div>
       </template>
@@ -112,6 +166,54 @@
                 <div class="col-md-6">
                   <b-form-input v-model="product_obj.selling_price" placeholder="$300"></b-form-input>
                 </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">On Hand</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="product_obj.onhand" placeholder="100"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Available</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="product_obj.available" placeholder="200"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Committed</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="product_obj.comitted" placeholder="100"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Sold</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="product_obj.sold" placeholder="120"></b-form-input>
+                </div>
+                 <div  class="col-md-6">
+                  <h5 style="color:black;">Incoming</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="product_obj.incoming" placeholder="50"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Inbound</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="product_obj.inbound" placeholder="500"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Outbound</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-input v-model="product_obj.outbound" placeholder="100"></b-form-input>
+                </div>
+                <div  class="col-md-6">
+                  <h5 style="color:black;">Status</h5>
+                </div>
+                <div class="col-md-6">
+                  <b-form-select v-model="product_obj.status" :options="options"></b-form-select>
+                </div>
                 
           </div>
       </template>
@@ -151,8 +253,21 @@ export default {
         quantity:null,
         cost_price:null,
         selling_price:null,
+        status:'disabled',
+        outbound:null,
+        inbound:null,
+        incoming:null,
+        sold:null,
+        onhand:null,
+        comitted:null,
+        available:null
+
 
       },
+      options:[
+        {value:'active',text:'active'},
+        {value:'disabled',text:'disabled'}
+      ],
       fields: [
           { key: 'product_code', label: 'Product Code' },
           { key: 'supplier_code', label: 'Supplier Code'},
@@ -179,6 +294,14 @@ export default {
         quantity:null,
         cost_price:null,
         selling_price:null,
+        status:'disabled',
+        outbound:null,
+        inbound:null,
+        incoming:null,
+        sold:null,
+        onhand:null,
+        comitted:null,
+        available:null
 
       }
 
@@ -190,6 +313,14 @@ export default {
         quantity:item.quantity,
         cost_price:item.cost_price,
         selling_price:item.selling_price,
+        status:item.status,
+        outbound:item.outbound,
+        inbound:item.inbound,
+        incoming:item.incoming,
+        sold:item.sold,
+        onhand:item.onhand,
+        comitted:item.comitted,
+        available:item.available
       }
       this.$bvModal.show('update-product-modal')
 
